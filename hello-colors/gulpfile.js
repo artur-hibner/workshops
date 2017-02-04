@@ -297,7 +297,7 @@ var
         // ========== watch dev task ==========
     gulp.task('watch:dev', function() {
         gulp.watch(js.in, ['js-lint', 'js:dev', browsersyncDev.reload]);
-        gulp.watch(css.in, ['sass:dev']);
+        gulp.watch(source + 'scss/*/*.scss', ['sass:dev']);
         gulp.watch(html.in, ['html:dev', browsersyncDev.reload]);
         gulp.watch(fonts.in, ['fonts:dev']);
         gulp.watch(images.in, ['images:dev']);
@@ -306,7 +306,7 @@ var
         // ========== watch prod task ==========
     gulp.task('watch:prod', function() {
         gulp.watch(js.in, ['js-lint', 'js:prod', browsersyncProd.reload]);
-        gulp.watch(css.in, ['sass:prod']);
+        gulp.watch(source + 'scss/*/*.scss', ['sass:prod']);
         gulp.watch(html.in, ['html:prod', browsersyncProd.reload]);
         gulp.watch(fonts.in, ['fonts:prod']);
         gulp.watch(images.in, ['images:prod']);
