@@ -1,4 +1,51 @@
+
+/* ===== CONTACT SECTION =====*/
+
 footer{
-	background-color: green;
-	border: 3px solid #ff4465;
+	background-image: url("../images/socialmedia.svg") ;
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: 50% 120%;
+	height: 220px;
+	background-color: #f4979c;
+	position: relative;
+	img{
+		width: 50%;
+	}
+	.social-icon{
+		margin: 0 auto;
+		padding-top: 70px;
+		text-align: center;
+		width: 50%;
+		&:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		li{
+			list-style-type: none;
+			float: left;
+    		margin-right: 30px;
+    		margin-left: 30px;
+		}
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		img{
+			width: 60px;
+			height: 60px;
+			display: inline-block;
+		}
+	}
+	.footer-info{
+		font-family: $inconsolata;
+		font-size: 1.4rem;
+
+		line-height: 1.8rem;
+		color: #fff;
+		position: absolute;
+		bottom: 20px;
+	}
 }

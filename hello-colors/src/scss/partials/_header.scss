@@ -1,14 +1,30 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
 
 header{
-	width: 100%;
-	
+	font-size: 1.8rem;
+	font-family: $inconsolata;
+	color: #fff;
 	nav{
+		font-family: $prata;
+		font-size: 2.2rem;
 		position: absolute;
 		z-index: 1;
 		top: 0 0;
-		// display: none;
+		margin: 30px auto auto 65px;
+		li{
+			float: left;
+			margin: 0 48px 0 0;
+		}
+		a{
+			color: #20c4bb;
+			text-decoration: none;
+		}
 	}
-	// background-color: red;
 	.letter-h, .letter-p, .letter-d{
 		height: 89vh;
 		float: left;
@@ -23,17 +39,13 @@ header{
 		background-size: 50%;
 		background-position: 9% 83%;
 		text-align: right;
-			// padding-right: 30px;
 		& p{
-			font-size: 18px;
-			font-family: $inconsolata;
-			color: white;
 			position: absolute;
 			bottom: 50px;
 			right: 65px;
 		}
 		& p:first-child{
-			font-size: 150px;
+			font-size: 15rem;
 			font-family: $prata;
 			border-bottom: 6px solid #fff;
 			position: absolute;
@@ -48,20 +60,15 @@ header{
 		background-color: #75e3dd;
 		background-image: url(../images/d.svg);
 		background-size: 65%;
-		// background-position: 50px bottom;
 		background-position: 13% 93%;
 		p{
-			font-size: 18px;
-			font-family: $inconsolata;
 			position: absolute;
 			bottom: 50px;
 			left: 30px;
 			color: #16736e;
 			text-align: right;
 			padding-right: 30px;
-
 		}
-
 	}
 	.letter-p{
 		width: 25%;
@@ -70,8 +77,6 @@ header{
 		background-size: 50%;
 		background-position: 13% 93%;
 		p{
-			font-size: 18px;
-			font-family: $inconsolata;
 			position: absolute;
 			bottom: 50px;
 			left: 30px;
@@ -83,13 +88,10 @@ header{
 	}
 	.scroll{
 		color: #2864b1;
-		font-size: 18px;
-			font-family: $inconsolata;
 		display: inline-block;
 		height: 11vh;
 		width: 100%;
 		text-align: center; 
 		line-height: 11vh;
-		// background-color: #f0f;
 	}
 }

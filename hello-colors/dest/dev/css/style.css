@@ -55,14 +55,37 @@ table {
 }
 
 /* CSS RESET END */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 header {
-  width: 100%;
+  font-size: 1.8rem;
+  font-family: Inconsolata, monospace;
+  color: #fff;
 }
 
 header nav {
+  font-family: Prata, serif;
+  font-size: 2.2rem;
   position: absolute;
   z-index: 1;
   top: 0 0;
+  margin: 30px auto auto 65px;
+}
+
+header nav li {
+  float: left;
+  margin: 0 48px 0 0;
+}
+
+header nav a {
+  color: #20c4bb;
+  text-decoration: none;
 }
 
 header .letter-h, header .letter-p, header .letter-d {
@@ -82,16 +105,13 @@ header .letter-h {
 }
 
 header .letter-h p {
-  font-size: 18px;
-  font-family: Inconsolata, monospace;
-  color: white;
   position: absolute;
   bottom: 50px;
   right: 65px;
 }
 
 header .letter-h p:first-child {
-  font-size: 150px;
+  font-size: 15rem;
   font-family: Prata, serif;
   border-bottom: 6px solid #fff;
   position: absolute;
@@ -109,8 +129,6 @@ header .letter-d {
 }
 
 header .letter-d p {
-  font-size: 18px;
-  font-family: Inconsolata, monospace;
   position: absolute;
   bottom: 50px;
   left: 30px;
@@ -128,8 +146,6 @@ header .letter-p {
 }
 
 header .letter-p p {
-  font-size: 18px;
-  font-family: Inconsolata, monospace;
   position: absolute;
   bottom: 50px;
   left: 30px;
@@ -140,8 +156,6 @@ header .letter-p p {
 
 header .scroll {
   color: #2864b1;
-  font-size: 18px;
-  font-family: Inconsolata, monospace;
   display: inline-block;
   height: 11vh;
   width: 100%;
@@ -149,9 +163,305 @@ header .scroll {
   line-height: 11vh;
 }
 
+main {
+  font-family: Inconsolata, monospace;
+  font-size: 1.8rem;
+  color: #16736e;
+}
+
+main h2, main h3 {
+  font-family: Prata, serif;
+  font-size: 10rem;
+}
+
+main h2 {
+  letter-spacing: 20px;
+  color: #41ccc4;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+main h3 {
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+main a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2fdbd2;
+  margin-top: 45px;
+}
+
+/* ===== WORK SECTION =====*/
+.works__item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.works__item--photo, .works__item--info {
+  float: left;
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.works__item--info {
+  padding: 40px 60px 20px 55px;
+}
+
+.works__item--info:nth-child(1) {
+  text-align: right;
+}
+
+.works__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.works__item--photo-info {
+  font-size: 3.2rem;
+  font-family: Prata, serif;
+  position: absolute;
+  top: 95px;
+  left: -110px;
+  z-index: 2;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.works__item--photo-info:before {
+  content: " ";
+  width: 260px;
+  height: 35px;
+  background-color: #75e3dd;
+  position: absolute;
+  top: -16px;
+  left: -10px;
+  z-index: -1;
+}
+
+.works__item--photo-info.even {
+  top: 545px;
+  right: -570px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.works__item--photo-info.even:before {
+  top: -16px;
+  left: -10px;
+}
+
+/* ===== TEAM SECTION =====*/
+#team {
+  height: 100vh;
+}
+
+#team h2 {
+  color: #003170;
+}
+
+#team:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.team__item--photo, .team__item--info {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.team__item--photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.team__item--photo p {
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
+
+.team__item--info {
+  padding: 15px 0 0 30px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.team__item--info h3 {
+  color: #306fbf;
+  line-height: 4.8rem;
+}
+
+.team__item--info p {
+  margin-bottom: 15px;
+}
+
+.team__item--info ul {
+  font-weight: bold;
+}
+
+.team__item--info li {
+  font-weight: normal;
+}
+
+.team__item--info li:first-child {
+  margin-top: 15px;
+}
+
+/* ===== CONTACT SECTION =====*/
+#contact {
+  margin-bottom: 30px;
+}
+
+#contact:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact h2 {
+  color: #f3747b;
+}
+
+.contact__form, .contact__info {
+  width: 50%;
+  float: left;
+}
+
+.contact__info--photo, .contact__info--address {
+  width: 50%;
+  float: left;
+}
+
+.contact__info--address, span, address {
+  color: #29273c;
+  display: inline-block;
+  padding-left: 22px;
+  line-height: 2.0rem;
+}
+
+.contact__info--address {
+  margin-top: 20px;
+}
+
+.contact__info--address span {
+  margin: 20px 0;
+  padding: 0;
+}
+
+address {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 70%;
+  height: 30px;
+  border: 0;
+  border-bottom: 2px solid #f3747b;
+  margin-top: 26px;
+}
+
+form textarea {
+  height: 200px;
+  resize: none;
+  border: 2px dashed #f3747b;
+}
+
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  font-family: Inconsolata, monospace;
+  font-size: 16px;
+  color: #f4979c;
+  padding-left: 12px;
+}
+
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  font-family: Inconsolata, monospace;
+  font-size: 16px;
+  color: #f4979c;
+  padding-left: 12px;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-family: Inconsolata, monospace;
+  font-size: 16px;
+  color: #f4979c;
+  padding-left: 12px;
+}
+
+form input::placeholder, form textarea::placeholder {
+  font-family: Inconsolata, monospace;
+  font-size: 16px;
+  color: #f4979c;
+  padding-left: 12px;
+}
+
+/* ===== CONTACT SECTION =====*/
 footer {
-  background-color: green;
-  border: 3px solid #ff4465;
+  background-image: url("../images/socialmedia.svg");
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: 50% 120%;
+  height: 220px;
+  background-color: #f4979c;
+  position: relative;
+}
+
+footer img {
+  width: 50%;
+}
+
+footer .social-icon {
+  margin: 0 auto;
+  padding-top: 70px;
+  text-align: center;
+  width: 50%;
+}
+
+footer .social-icon:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .social-icon li {
+  list-style-type: none;
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+footer .social-icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .social-icon img {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+
+footer .footer-info {
+  font-family: Inconsolata, monospace;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
