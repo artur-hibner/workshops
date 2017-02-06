@@ -1,5 +1,18 @@
+/* ===== GRID ===== */
 .wrapper{
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+$colnum: 12;
+
+%grid{
+	float: left;
+}
+@for $i from 1 through $colnum {
+	.col-#{$i} {
+		width: (100% / ($colnum / $i));
+		@extend %grid;
+	}
 }

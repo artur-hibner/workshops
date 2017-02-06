@@ -63,6 +63,49 @@ html {
   font-size: 62.5%;
 }
 
+#burger-container {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 99;
+}
+
+#burger {
+  cursor: pointer;
+  display: block;
+}
+
+#burger span {
+  background: #75e3dd;
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 3px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#burger-container.open span:nth-child(2),
+#burger-container.open span:nth-child(3) {
+  width: 0;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(4) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -12px;
+}
+
+#burger-container.open span:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 12px;
+}
+
 header {
   font-size: 1.8rem;
   font-family: Inconsolata, monospace;
@@ -458,10 +501,88 @@ footer .footer-info {
   bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  #burger-container {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  nav.open {
+    display: block;
+  }
+  nav.open ul li {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  nav.open ul li a {
+    border-bottom: 1px solid #777;
+  }
+}
+
+/* ===== GRID ===== */
 .wrapper {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

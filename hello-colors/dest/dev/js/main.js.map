@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA","file":"main.js","sourcesContent":["$(document).ready(function(){\r\n\t$(\"#burger-container\").on('click', function(){\r\n\t\t$(this).toggleClass(\"open\");\r\n\t\t$(\"#main-menu\").toggleClass(\"open\");\r\n\t});\r\n});"]}
