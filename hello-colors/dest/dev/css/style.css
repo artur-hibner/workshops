@@ -445,7 +445,7 @@ form input::placeholder, form textarea::placeholder {
   padding-left: 12px;
 }
 
-/* ===== CONTACT SECTION =====*/
+/* ===== FOOTER SECTION =====*/
 footer {
   background-image: url("../images/socialmedia.svg");
   background-size: 65%;
@@ -510,6 +510,12 @@ footer .footer-info {
   }
   nav.open {
     display: block;
+    background-color: rgba(102, 102, 102, 0.9);
+    height: 40vh;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    left: -65px;
   }
   nav.open ul li {
     float: none;
@@ -523,6 +529,201 @@ footer .footer-info {
   }
   nav.open ul li a {
     border-bottom: 1px solid #777;
+  }
+  header .letter-h, header .letter-p, header .letter-d {
+    height: 40vh;
+    width: 100%;
+  }
+  header .letter-p, header .letter-d {
+    height: 24vh;
+  }
+  header .letter-p p, header .letter-d p {
+    bottom: 30px;
+    left: 40px;
+  }
+  header .letter-h {
+    background-size: 35%;
+  }
+  header .letter-h p {
+    font-size: 1.6rem;
+    right: 40px;
+  }
+  header .letter-h p:first-child {
+    font-size: 5rem;
+    bottom: 150px;
+    right: 50px;
+  }
+  header .letter-d {
+    background-size: 25%;
+    background-position: 7% 75%;
+  }
+  header .letter-p {
+    background-size: 20%;
+    background-position: 7% 75%;
+  }
+  header .scroll {
+    height: 12vh;
+    word-wrap: break-word;
+  }
+  main {
+    font-size: 1.4rem;
+  }
+  main h2, main h3 {
+    font-size: 6rem;
+    padding-left: 10px;
+  }
+  main h2 {
+    margin-bottom: 30px;
+  }
+  main h3 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  main a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2fdbd2;
+    margin-top: 45px;
+  }
+  /* ===== WORK SECTION =====*/
+  .works__item--photo, .works__item--info {
+    width: 100%;
+    height: 100%;
+  }
+  .works__item--photo:nth-child(1) {
+    margin-top: 20px;
+  }
+  .works__item--info {
+    padding: 40px 0 50px 20px;
+  }
+  .works__item--info:nth-child(1) {
+    padding-right: 20px;
+  }
+  .works__item img {
+    width: 100%;
+    height: 100%;
+  }
+  .works__item--photo-info {
+    top: 10px;
+    left: 30px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  .works__item--photo-info.even {
+    top: 10px;
+    left: 30px;
+    right: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  /* ===== TEAM SECTION =====*/
+  .team__item--photo, .team__item--info {
+    width: 100%;
+  }
+  .team__item--photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .team__item--photo p {
+    top: 50px;
+    left: 50px;
+    width: 70%;
+  }
+  .team__item--info {
+    padding: 25px 5px 50px 5px;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+  /* ===== CONTACT SECTION =====*/
+  #contact {
+    margin-bottom: 50px;
+  }
+  .contact__form, .contact__info {
+    width: 100%;
+  }
+  .contact__info {
+    padding: 0 20px;
+  }
+  .contact__info--photo, .contact__info--address {
+    width: 50%;
+    float: left;
+  }
+  .contact__info--address, span, address {
+    color: #29273c;
+    display: inline-block;
+    padding-left: 22px;
+    line-height: 2.0rem;
+  }
+  .contact__info--address {
+    margin-top: 20px;
+  }
+  .contact__info--address span {
+    margin: 20px 0;
+    padding: 0;
+  }
+  address {
+    font-weight: bold;
+  }
+  form {
+    width: 90%;
+    margin: 0 auto 30px auto;
+  }
+  form input, form textarea {
+    width: 100%;
+  }
+  form textarea {
+    height: 200px;
+    resize: none;
+    border: 2px dashed #f3747b;
+  }
+  form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+    font-family: Inconsolata, monospace;
+    font-size: 16px;
+    color: #f4979c;
+    padding-left: 12px;
+  }
+  form input::-moz-placeholder, form textarea::-moz-placeholder {
+    font-family: Inconsolata, monospace;
+    font-size: 16px;
+    color: #f4979c;
+    padding-left: 12px;
+  }
+  form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+    font-family: Inconsolata, monospace;
+    font-size: 16px;
+    color: #f4979c;
+    padding-left: 12px;
+  }
+  form input::placeholder, form textarea::placeholder {
+    font-family: Inconsolata, monospace;
+    font-size: 16px;
+    color: #f4979c;
+    padding-left: 12px;
+  }
+  /* ===== FOOTER SECTION =====*/
+  footer {
+    background-image: url("../images/socialmedia.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 90%;
+    background-color: #f4979c;
+    position: relative;
+  }
+  footer img {
+    width: 50%;
+  }
+  footer .social-icon {
+    padding-top: 40px;
+    width: 80%;
+  }
+  footer .social-icon li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  footer .footer-info {
+    position: static;
+    margin: 60px 0 0 20px;
   }
 }
 
