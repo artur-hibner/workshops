@@ -1,5 +1,3 @@
-# Hello Colors template
-
 ---------------
 #### Source ####
 	
