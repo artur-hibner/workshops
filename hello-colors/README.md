@@ -1,22 +1,24 @@
+### Live demo ### 
 
-#### Source ####
-	
+[LIVE DEMO] (https://artur-hibner.github.io/workshops/hello-colors/dest/dev/)
+
+---------------
+### Source ###
 folder: src 
 
 ---------------
 
-#### Files Compiled (Developer) ####
+### Files Compiled (Developer) ###
 
 Folder: dest/dev
 
 ---------------
 
-#### Files Compiled (Produce) ####
+### Files Compiled (Produce) ###
 
 Folder: dest/prod
 
 ---------------
 
-### Live demo ### 
-
-[LIVE DEMO] (https://artur-hibner.github.io/workshops/hello-colors/dest/dev/)
+### Preview
+![picture alt](hello-colors-preview.jpg "Hello Colors Preview")
