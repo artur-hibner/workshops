@@ -1,0 +1,183 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Libre+Baskerville:400,400i|Montserrat:700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS RESET END */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #000;
+  height: 100%;
+}
+
+header {
+  font-size: 1.8rem;
+  font-family: Montserrat, sans-serif;
+}
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 40px 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 47px;
+  padding: 10px 0;
+}
+
+header nav li:nth-child(2) {
+  margin-right: 130px;
+}
+
+header nav li:nth-child(3) {
+  margin-left: 130px;
+}
+
+header nav li:last-child {
+  margin: 0;
+}
+
+header nav a {
+  color: #000;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: width .5s ease, color .5s ease;
+  transition: width .5s ease, color .5s ease;
+}
+
+header nav a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+header nav a:hover {
+  color: #70a3d0;
+}
+
+header nav a:hover:after {
+  width: 100%;
+  background: #70a3d0;
+}
+
+header .banner {
+  position: relative;
+  width: 100%;
+  padding: 235px;
+  background-image: url("../images/herobanner.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header .banner .logo {
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 75px);
+}
+
+header .banner h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 7.3rem;
+  font-style: italic;
+  text-align: center;
+  position: relative;
+  display: block;
+  z-index: 5;
+}
+
+header .banner h1:after {
+  content: "";
+  display: block;
+  height: 53px;
+  width: 643px;
+  background-color: #fff;
+  position: absolute;
+  top: -14px;
+  left: 200px;
+  z-index: -1;
+}
+
+.logo img {
+  width: 150px;
+}
+
+p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+}
+
+span {
+  font-family: Karla, sans-serif;
+  font-size: 3rem;
+}
+
+/* ===== FOOTER SECTION =====*/
+/* ===== GRID ===== */
+
+/*# sourceMappingURL=style.css.map */
