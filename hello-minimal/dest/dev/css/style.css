@@ -136,6 +136,7 @@ header .banner {
 }
 
 header .banner .logo {
+  width: 150px;
   position: absolute;
   top: -40px;
   left: calc(50% - 75px);
@@ -159,22 +160,104 @@ header .banner h1:after {
   background-color: #fff;
   position: absolute;
   top: -14px;
-  left: 200px;
+  left: 0;
   z-index: -1;
 }
 
-.logo img {
-  width: 150px;
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-p {
-  font-family: "Libre Baskerville", serif;
-  font-size: 2rem;
-}
-
-span {
+p, h4 {
   font-family: Karla, sans-serif;
-  font-size: 3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 5rem;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  width: 225px;
+  height: 20px;
+  background-color: #ececec;
+  position: absolute;
+  top: 30%;
+  left: 130px;
+}
+
+.offer {
+  position: relative;
+  padding: 95px 300px 115px 0;
+}
+
+.offer ul {
+  display: block;
+  width: 195px;
+  margin: 50px 40px 50px 0;
+  float: left;
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.offer ul li {
+  font-weight: normal;
+  border-bottom: 3px solid #ececec;
+  font-size: 1.4rem;
+  line-height: 5rem;
+}
+
+.offer ul li:last-child {
+  border: none;
+}
+
+.offer p:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.offer__work {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.offer__work h4 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.offer__work h4:before {
+  content: "";
+  display: block;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 11px solid #ececec;
+  position: absolute;
+  top: -45px;
+  left: -65px;
+  z-index: -1;
+}
+
+.offer__work img {
+  width: 360px;
+  height: 100%;
+  margin-top: 3px;
 }
 
 /* ===== FOOTER SECTION =====*/

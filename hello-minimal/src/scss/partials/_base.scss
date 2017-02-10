@@ -1,8 +1,90 @@
-p{
-	font-family: $libre;
-	font-size: 2rem;
+// $libre: 'Libre Baskerville', serif;
+// $karla: Karla, sans-serif;
+// $montserrat: Montserrat, sans-serif;
+.wrapper{
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
 }
-span{
+p, h4{
 	font-family: $karla;
-	font-size: 3rem;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+h2{
+	font-family: $libre;
+	font-size: 5rem;
+	font-style: italic;
+	position: relative;
+	margin-bottom: 40px;
+	&:after{
+		content: "";
+		display: block;
+		width: 225px;
+		height: 20px;
+		background-color: #ececec;
+		position: absolute;
+		top: 30%;
+		left: 130px;
+	}
+}
+.offer{
+	position: relative;
+	padding: 95px 300px 115px 0;
+	ul{
+		display: block;
+		width: 195px;
+		margin: 50px 40px 50px 0;
+		float: left;
+		font-family: $karla;
+		font-size: 1.6rem;
+		line-height: 3.5rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		li{
+			font-weight: normal;
+			border-bottom: 3px solid #ececec;
+			font-size: 1.4rem;
+			line-height: 5rem;
+			&:last-child{
+				border: none;
+			}
+		}
+	}
+	p{
+		&:before{
+			content: "";
+			display: block;
+			clear: both;
+		
+		}
+	}
+	&__work{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		h4{
+			text-transform: uppercase;
+			position: relative;
+			&:before{
+				content: "";
+				display: block;
+				width: 115px;
+				height: 115px;
+				border-radius: 50%;
+				border: 11px solid #ececec;
+				// background-color: #ececec;
+				position: absolute;
+				top: -45px;
+				left: -65px;
+				z-index: -1;
+			}
+		}
+		img{
+			width: 360px;
+			height: 100%;
+			margin-top: 3px;
+		}
+	}
 }
