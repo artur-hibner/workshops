@@ -164,6 +164,12 @@ header .banner h1:after {
   z-index: -1;
 }
 
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -171,7 +177,7 @@ header .banner h1:after {
   margin: 0 auto;
 }
 
-p, h4 {
+p, h4, span {
   font-family: Karla, sans-serif;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -182,7 +188,10 @@ h2 {
   font-size: 5rem;
   font-style: italic;
   position: relative;
+  display: inline-block;
+  margin-top: 50px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 h2:after {
@@ -198,7 +207,8 @@ h2:after {
 
 .offer {
   position: relative;
-  padding: 95px 300px 115px 0;
+  padding: 45px 300px 115px 0;
+  z-index: 10;
 }
 
 .offer ul {
@@ -233,12 +243,14 @@ h2:after {
 .offer__work {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -100px;
+  z-index: -2;
 }
 
 .offer__work h4 {
   text-transform: uppercase;
   position: relative;
+  z-index: -1;
 }
 
 .offer__work h4:before {
@@ -251,7 +263,7 @@ h2:after {
   position: absolute;
   top: -45px;
   left: -65px;
-  z-index: -1;
+  z-index: -3;
 }
 
 .offer__work img {
@@ -260,7 +272,178 @@ h2:after {
   margin-top: 3px;
 }
 
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: #ececec;
+  background-image: url("../images/about-bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.about h2:after {
+  background-color: #fff;
+  left: 150px;
+}
+
+.about p {
+  padding-right: 300px;
+  margin-bottom: 30px;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.contact h2:after {
+  left: 190px;
+}
+
+.contact__form, .contact__info {
+  float: left;
+  width: 49%;
+}
+
+.contact__form {
+  padding-right: 75px;
+}
+
+.contact__form form input, .contact__form form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #cdcccc;
+  margin-top: 30px;
+  padding-bottom: 12px;
+}
+
+.contact__form form input[type=submit] {
+  padding: 25px 0;
+  background: #e2e2e1;
+  cursor: pointer;
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  color: #8f8c8c;
+  text-transform: uppercase;
+}
+
+.contact__form form textarea {
+  resize: none;
+}
+
+.contact__form form input::-webkit-input-placeholder, .contact__form form textarea::-webkit-input-placeholder {
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  color: #939393;
+}
+
+.contact__form form input::-moz-placeholder, .contact__form form textarea::-moz-placeholder {
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  color: #939393;
+}
+
+.contact__form form input:-ms-input-placeholder, .contact__form form textarea:-ms-input-placeholder {
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  color: #939393;
+}
+
+.contact__form form input::placeholder, .contact__form form textarea::placeholder {
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  color: #939393;
+}
+
+.contact__info {
+  padding-left: 75px;
+}
+
+.contact__info figure img {
+  width: 100%;
+}
+
+.contact__info figcaption {
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+  position: relative;
+  z-index: -1;
+}
+
+.contact__info figcaption:before {
+  content: "";
+  display: block;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 11px solid #ececec;
+  position: absolute;
+  top: -75px;
+  left: -65px;
+  z-index: -3;
+}
+
+.contact__info address span {
+  display: block;
+  font-weight: bold;
+}
+
 /* ===== FOOTER SECTION =====*/
+footer {
+  margin-top: 50px;
+  background-color: #ececec;
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+footer img {
+  height: 100%;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+  padding: 35px 0;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer a {
+  display: block;
+  color: #000;
+  height: 50px;
+  margin: 0 40px;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+footer a:hover {
+  color: #70a3d0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer a:hover:after {
+  width: 100%;
+  background: #70a3d0;
+}
+
 /* ===== GRID ===== */
 
 /*# sourceMappingURL=style.css.map */

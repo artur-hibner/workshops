@@ -1,13 +1,13 @@
-// $libre: 'Libre Baskerville', serif;
-// $karla: Karla, sans-serif;
-// $montserrat: Montserrat, sans-serif;
+main{
+	@include clearfix;
+}
 .wrapper{
 	position: relative;
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 }
-p, h4{
+p, h4, span{
 	font-family: $karla;
 	font-size: 1.4rem;
 	line-height: 2rem;
@@ -17,7 +17,10 @@ h2{
 	font-size: 5rem;
 	font-style: italic;
 	position: relative;
+	display: inline-block;
+	margin-top: 50px;
 	margin-bottom: 40px;
+	width: 100%;
 	&:after{
 		content: "";
 		display: block;
@@ -31,7 +34,8 @@ h2{
 }
 .offer{
 	position: relative;
-	padding: 95px 300px 115px 0;
+	padding: 45px 300px 115px 0;
+	z-index: 10;
 	ul{
 		display: block;
 		width: 195px;
@@ -63,10 +67,12 @@ h2{
 	&__work{
 		position: absolute;
 		right: 0;
-		bottom: 0;
+		bottom: -100px;
+		z-index: -2;
 		h4{
 			text-transform: uppercase;
 			position: relative;
+			z-index: -1;
 			&:before{
 				content: "";
 				display: block;
@@ -74,11 +80,10 @@ h2{
 				height: 115px;
 				border-radius: 50%;
 				border: 11px solid #ececec;
-				// background-color: #ececec;
 				position: absolute;
 				top: -45px;
 				left: -65px;
-				z-index: -1;
+				z-index: -3;
 			}
 		}
 		img{
@@ -87,4 +92,109 @@ h2{
 			margin-top: 3px;
 		}
 	}
+}
+
+.about{
+	width: 100%;
+	height: 100vh;
+	background-color: #ececec;
+	background-image: url('../images/about-bg.jpg');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	h2{
+		&:after{
+			background-color: #fff;
+			left: 150px;
+		}
+	}
+	p{
+		padding-right: 300px;
+		margin-bottom: 30px;
+	}
+}
+section{
+	width: 100%;
+	height: 100%;
+}
+.contact{
+	padding-bottom: 40px;
+	position: relative;
+	h2{
+		&:after{
+			left: 190px;
+		}
+	}
+	&__form, &__info{
+		float: left;
+		width: 49%;
+	}
+	&__form{
+		padding-right: 75px;
+		form{
+			input, textarea{
+				width: 100%;
+				border: 0;
+				border-bottom: 2px solid #cdcccc;
+				margin-top: 30px;
+				padding-bottom: 12px;
+				&:focus{
+				}
+			}
+			input[type=submit] {
+   				padding: 25px 0; 
+			    background:#e2e2e1; 
+			    cursor:pointer;
+			    font-family: $karla;
+				font-size: 1.6rem;
+				color: #8f8c8c;
+				text-transform: uppercase;
+			}
+			textarea{
+				resize: none;
+			}
+			input::placeholder, textarea::placeholder{
+				font-family: $karla;
+				font-size: 1.6rem;
+				color: #939393;
+			}
+		}
+	}
+	&__info{
+		padding-left: 75px;
+		figure{
+			img{
+				width: 100%;
+				
+			}
+		}
+		figcaption{
+			font-family: $karla;
+			font-size: 1.6rem;
+			line-height: 2rem;
+			text-transform: uppercase;
+			padding-bottom:36px;
+			position: relative;
+			z-index: -1;
+			&:before{
+				content: "";
+				display: block;
+				width: 115px;
+				height: 115px;
+				border-radius: 50%;
+				border: 11px solid #ececec;
+				position: absolute;
+				top: -75px;
+				left: -65px;
+				z-index: -3;
+			}
+		}
+		address{
+			span{
+				display: block;
+				font-weight: bold;
+			}
+		}
+	}
+
 }
