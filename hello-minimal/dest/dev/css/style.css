@@ -208,14 +208,15 @@ h2:after {
 
 .offer {
   position: relative;
-  padding: 45px 300px 115px 0;
+  padding: 0 300px 115px 0;
   z-index: 10;
 }
 
 .offer ul {
   display: block;
   width: 195px;
-  margin: 50px 40px 50px 0;
+  padding-top: 50px;
+  margin: 0 40px 50px 0;
   float: left;
   font-family: Karla, sans-serif;
   font-size: 1.6rem;
@@ -445,7 +446,52 @@ footer a:hover:after {
   background: #70a3d0;
 }
 
+@media screen and (min-width: 640px) and (max-width: 960px) {
+  /* ========== HEADER ========== */
+  header .banner h1 {
+    font-size: 6.3rem;
+  }
+  header .banner h1:after {
+    width: 600px;
+    left: 20px;
+  }
+  /* ========== MAIN ========== */
+  .wrapper {
+    width: 95%;
+  }
+  .offer {
+    padding: 0 0 50px 0;
+  }
+  .offer ul {
+    width: 40%;
+    float: none;
+  }
+  .offer p {
+    clear: both;
+  }
+  .offer__work {
+    bottom: 270px;
+  }
+  .about p {
+    padding-right: 150px;
+  }
+  section {
+    width: 100%;
+    height: 100%;
+  }
+  .contact__form {
+    padding-right: 0;
+  }
+  .contact__form form input[type=submit] {
+    padding: 15px 0;
+  }
+  .contact__form form textarea {
+    height: 180px;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 640px) {
+  /* ========== HEADER ========== */
   header nav ul {
     padding: 30px 0 20px 0;
   }
@@ -468,13 +514,14 @@ footer a:hover:after {
     font-size: 5rem;
   }
   header .banner h1:after {
-    width: 420px;
+    width: 400px;
     left: 22px;
   }
   header .banner .logo {
     width: 120px;
     top: -20px;
   }
+  /* ========== MAIN ========== */
   .wrapper {
     width: 95%;
   }
@@ -568,11 +615,11 @@ footer a:hover:after {
     left: calc(50% - 50px);
   }
   header .banner h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
   header .banner h1:after {
     height: 40px;
-    width: 320px;
+    width: 290px;
     left: 12px;
     top: -18px;
   }
@@ -654,8 +701,9 @@ footer a:hover:after {
 }
 
 @media screen and (max-width: 320px) {
+  /* ========== HEADER ========== */
   header .banner h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   header .banner h1:after {
     height: 0;

@@ -1,9 +1,63 @@
-@media screen and (min-width: 641px) and (max-width:960px){
+@media screen and (min-width: 640px) and (max-width:960px){
+/* ========== HEADER ========== */
+	header{
+		.banner{
+	  		h1{
+	  			font-size: 6.3rem;
+	  			&:after{
+	  				width: 600px;
+	  				left: 20px;
+	  			}
+	  		}
+		}
+	}
+
+/* ========== MAIN ========== */
 	
+	.wrapper{
+		width: 95%;
+	}
+	.offer{
+		padding: 0 0 50px 0;
+		ul{
+			width: 40%;
+			float: none;
+		}
+		p{
+			clear: both;
+		}
+		&__work{
+			bottom: 270px;
+		}
+	}
+	.about{
+		p{
+			padding-right: 150px;
+		}
+	}
+	section{
+		width: 100%;
+		height: 100%;
+	}
+	.contact{
+		&__form{
+			padding-right: 0;
+			form{
+				input[type=submit] {
+	   				padding: 15px 0;
+				}
+				textarea{
+					height: 180px;
+				}
+			}
+		}
+	}
+
 }
 
 
 @media screen and (min-width: 480px) and (max-width: 640px){
+/* ========== HEADER ========== */
 	header{
 		nav{
 			ul{
@@ -28,7 +82,7 @@
 	  		h1{
 	  			font-size: 5rem;
 	  			&:after{
-	  				width: 420px;
+	  				width: 400px;
 	  				left: 22px;
 	  			}
 	  		}
@@ -38,6 +92,8 @@
       		}
 		}
 	}
+
+/* ========== MAIN ========== */
 
 	.wrapper{
 		width: 95%;
@@ -76,6 +132,7 @@
 			margin-bottom: 50px;
 		}
 	}
+
 	.contact{
 		padding-bottom: 40px;
 		&__form{
@@ -106,8 +163,7 @@
 
 
 @media screen and (max-width: 480px){
-		/* ========== HEADER ========== */
-
+/* ========== HEADER ========== */
 	header{
 		nav{
 			ul{
@@ -146,10 +202,10 @@
 	      		left: calc(50% - 50px);
 	      	}
 	  		h1{
-	  			font-size: 4rem;
+	  			font-size: 3.6rem;
 	  			&:after{
 	  				height: 40px;
-	  				width: 320px;
+	  				width: 290px;
 	  				left: 12px;
 	  				top: -18px;
 	  			}
@@ -246,10 +302,11 @@
 
 
 @media screen and (max-width: 320px) {
+/* ========== HEADER ========== */
 	header{
 		.banner{
 	  		h1{
-	  			font-size: 2rem;
+	  			font-size: 3rem;
 	  			&:after{
 	  				height: 0;
 	  			}
