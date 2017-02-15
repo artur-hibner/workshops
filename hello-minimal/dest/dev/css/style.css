@@ -127,7 +127,7 @@ header nav a:hover:after {
 header .banner {
   position: relative;
   width: 100%;
-  padding: 235px;
+  padding: 235px 0;
   background-image: url("../images/herobanner.jpg");
   background-size: cover;
   background-position: top center;
@@ -157,10 +157,11 @@ header .banner h1:after {
   display: block;
   height: 53px;
   width: 643px;
+  margin: 0 auto;
   background-color: #fff;
   position: absolute;
   top: -14px;
-  left: 0;
+  right: 322px;
   z-index: -1;
 }
 
@@ -444,11 +445,94 @@ footer a:hover:after {
   background: #70a3d0;
 }
 
-@media screen and (max-width: 320px) {
-  header {
-    font-size: 1.8rem;
-    font-family: Montserrat, sans-serif;
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  header nav ul {
+    padding: 30px 0 20px 0;
   }
+  header nav li {
+    margin-right: 25px;
+  }
+  header nav li:nth-child(2) {
+    margin-right: 70px;
+  }
+  header nav li:nth-child(3) {
+    margin-left: 70px;
+  }
+  header nav li:last-child {
+    margin: 0;
+  }
+  header .banner {
+    padding: 235px 0;
+  }
+  header .banner h1 {
+    font-size: 5rem;
+  }
+  header .banner h1:after {
+    width: 420px;
+    left: 22px;
+  }
+  header .banner .logo {
+    width: 120px;
+    top: -20px;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  p, h4, span {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .offer {
+    padding: 0 0 50px 0;
+  }
+  .offer ul {
+    margin: 50px 0.5%;
+  }
+  .offer__work {
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    z-index: -2;
+  }
+  .offer__work h4 {
+    display: none;
+  }
+  .offer__work img {
+    width: 360px;
+    height: 100%;
+    margin-top: 3px;
+  }
+  .about {
+    height: 100%;
+    background-position: top left;
+  }
+  .about p {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  .contact {
+    padding-bottom: 40px;
+  }
+  .contact__form {
+    padding-right: 0;
+  }
+  .contact__form form input[type=submit] {
+    padding: 10px 0;
+  }
+  .contact__form form textarea {
+    resize: none;
+    height: 130px;
+  }
+  .contact__info figure {
+    text-align: center;
+  }
+  .contact__info address span {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ========== HEADER ========== */
   header nav ul {
     list-style: none;
     text-align: center;
@@ -475,7 +559,7 @@ footer a:hover:after {
     display: none;
   }
   header .banner {
-    padding: 100px 0px;
+    padding: 180px 0px;
     background-attachment: initial;
   }
   header .banner .logo {
@@ -484,16 +568,97 @@ footer a:hover:after {
     left: calc(50% - 50px);
   }
   header .banner h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   header .banner h1:after {
-    height: 30px;
-    width: 80%;
-    top: -15px;
-    left: 30px;
+    height: 40px;
+    width: 320px;
+    left: 12px;
+    top: -18px;
+  }
+  /* ========== MAIN ========== */
+  .wrapper {
+    width: 95%;
+  }
+  p, h4, span {
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  h2:after {
+    display: none;
+  }
+  .offer {
+    padding: 15px 0px 35px 0;
+  }
+  .offer ul {
+    width: 100%;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    float: none;
+  }
+  .offer__work {
+    display: none;
+  }
+  .about {
+    height: 100%;
+  }
+  .about p {
+    padding-right: 0;
+  }
+  section {
+    width: 100%;
+    height: 100%;
+  }
+  .contact {
+    padding-bottom: 40px;
+    position: relative;
+  }
+  .contact__form, .contact__info {
+    float: none;
+    width: 100%;
+  }
+  .contact__form {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .contact__form form input[type=submit] {
+    padding: 10px 0;
+  }
+  .contact__form form textarea {
+    resize: none;
+    height: 100px;
+  }
+  .contact__info {
+    padding-left: 0;
+  }
+  .contact__info figure {
+    text-align: center;
+  }
+  .contact__info address span {
+    text-align: center;
+  }
+  /* ========== FOOTER ========== */
+  footer {
+    margin-top: 0;
   }
   footer ul a {
     margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header .banner h1 {
+    font-size: 2rem;
+  }
+  header .banner h1:after {
+    height: 0;
   }
 }
 

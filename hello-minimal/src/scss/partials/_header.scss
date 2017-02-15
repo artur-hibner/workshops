@@ -60,7 +60,7 @@ header{
 	.banner{
 		position: relative;
 		width: 100%;
-		padding: 235px;
+		padding: 235px 0;
 		background-image: url('../images/herobanner.jpg');
 		background-size: cover;
 		background-position: top center;
@@ -85,10 +85,11 @@ header{
   				display: block;
   				height: 53px;
   				width: 643px;
+  				margin: 0 auto;
   				background-color: #fff;
   				position: absolute;
   				top: -14px;
-  				left: 0;
+  				right: 322px;
   				z-index: -1;
   			}
   		}

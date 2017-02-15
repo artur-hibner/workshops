@@ -3,25 +3,116 @@
 }
 
 
-@media screen and (min-width: 481px) and(max-width: 640px){
-	
-}
-
-
-@media screen and (min-width: 321px) and (max-width: 480px){
-	
-}
-
-
-@media screen and (max-width: 320px){
+@media screen and (min-width: 480px) and (max-width: 640px){
 	header{
-		font-size: 1.8rem;
-		font-family: $montserrat;
+		nav{
+			ul{
+				padding: 30px 0 20px 0;
+			}
+			li{
+	  			margin-right: 25px;
+	  			&:nth-child(2){
+	  				margin-right: 70px;
+	  			}
+	  			&:nth-child(3){
+	  				margin-left: 70px;
+	  			}
+	  			&:last-child{
+	  				margin: 0;
+	  			}
+			}
+		}
+
+		.banner{
+			padding: 235px 0;
+	  		h1{
+	  			font-size: 5rem;
+	  			&:after{
+	  				width: 420px;
+	  				left: 22px;
+	  			}
+	  		}
+	  		.logo{
+      			width: 120px;
+      			top: -20px;
+      		}
+		}
+	}
+
+	.wrapper{
+		width: 95%;
+	}
+	p, h4, span{
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	.offer{
+		padding: 0 0 50px 0;
+		ul{
+			margin: 50px 0.5%;
+		}
+		&__work{
+			position: absolute;
+			right: 0;
+			bottom: 150px;
+			z-index: -2;
+			h4{
+				display: none;
+			}
+			img{
+				width: 360px;
+				height: 100%;
+				margin-top: 3px;
+			}
+		}
+	}
+
+	.about{
+		height: 100%;
+		background-position: top left;
+		p{
+			padding-right: 0;
+			margin-bottom: 50px;
+		}
+	}
+	.contact{
+		padding-bottom: 40px;
+		&__form{
+			padding-right: 0;
+			form{
+			
+				input[type=submit] {
+	   				padding: 10px 0;
+				}
+				textarea{
+					resize: none;
+					height: 130px;
+				}
+			}
+		}
+		&__info{
+			figure{
+				text-align: center;
+			}
+			address{
+				span{
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 480px){
+		/* ========== HEADER ========== */
+
+	header{
 		nav{
 			ul{
 				list-style: none;
 				text-align: center;
-				// padding: 40px 0;
 			}
 			li{
 	  			display: inline-block;
@@ -47,7 +138,7 @@
 			}
 		}
 		.banner{
-			padding: 100px 0px;
+			padding: 180px 0px;
 	      	background-attachment: initial;
 	      	.logo{
 	      		width: 100px;
@@ -55,19 +146,95 @@
 	      		left: calc(50% - 50px);
 	      	}
 	  		h1{
-	  			font-size: 2.5rem;
+	  			font-size: 4rem;
 	  			&:after{
-	  				height: 30px;
-	  				width: 80%;
-	  				top: -15px;
-	  				left: 30px;
+	  				height: 40px;
+	  				width: 320px;
+	  				left: 12px;
+	  				top: -18px;
 	  			}
 	  		}
 		}
 	}
 
+/* ========== MAIN ========== */
 
+	.wrapper{
+		width: 95%;
+	}
+	p, h4, span{
+		padding: 0;
+		text-align: justify;
+		text-justify: inter-word;
+	}
+	h2{
+		font-size: 3rem;
+		margin-top: 10px; 
+		margin-bottom: 20px;
+		text-align: center;
+		&:after{
+			display: none;
+		}
+	}
+	.offer{
+		padding: 15px 0px 35px 0;
+		ul{
+			width: 100%;
+			margin: 15px 0 15px 0;
+			text-align: center;
+			float: none;
+		}
+		&__work{
+			display: none;
+		}
+	}
+
+	.about{
+		height: 100%;
+		p{
+			padding-right: 0;
+		}
+	}
+	section{
+		width: 100%;
+		height: 100%;
+	}
+	.contact{
+		padding-bottom: 40px;
+		position: relative;
+		&__form, &__info{
+			float: none;
+			width: 100%;
+		}
+		&__form{
+			padding-right: 0;
+			margin-bottom: 30px;
+			form{
+				input[type=submit] {
+	   				padding: 10px 0; 
+				}
+				textarea{
+					resize: none;
+					height: 100px;
+				}
+			}
+		}
+		&__info{
+			padding-left: 0;
+			figure{
+				text-align: center;
+			}
+			address{
+				span{
+					text-align: center;
+				}
+			}
+		}
+	}
+
+/* ========== FOOTER ========== */
 	footer{
+		margin-top: 0;
 		ul{
 			a{	
 				margin: 0 10px;
@@ -75,4 +242,18 @@
 		}
 	}
 
+}
+
+
+@media screen and (max-width: 320px) {
+	header{
+		.banner{
+	  		h1{
+	  			font-size: 2rem;
+	  			&:after{
+	  				height: 0;
+	  			}
+	  		}
+		}
+	}
 }
