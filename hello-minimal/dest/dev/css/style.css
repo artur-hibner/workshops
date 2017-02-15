@@ -444,6 +444,59 @@ footer a:hover:after {
   background: #70a3d0;
 }
 
+@media screen and (max-width: 320px) {
+  header {
+    font-size: 1.8rem;
+    font-family: Montserrat, sans-serif;
+  }
+  header nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  header nav li {
+    display: inline-block;
+    margin-right: 47px;
+    padding: 10px 0;
+  }
+  header nav li:nth-child(2) {
+    margin-right: 130px;
+  }
+  header nav li:nth-child(3) {
+    margin-left: 130px;
+  }
+  header nav li:last-child {
+    margin: 0;
+  }
+  header nav a {
+    color: #000;
+    height: 100%;
+  }
+  header nav a:after {
+    display: none;
+  }
+  header .banner {
+    padding: 100px 0px;
+    background-attachment: initial;
+  }
+  header .banner .logo {
+    width: 100px;
+    top: -10px;
+    left: calc(50% - 50px);
+  }
+  header .banner h1 {
+    font-size: 2.5rem;
+  }
+  header .banner h1:after {
+    height: 30px;
+    width: 80%;
+    top: -15px;
+    left: 30px;
+  }
+  footer ul a {
+    margin: 0 10px;
+  }
+}
+
 /* ===== GRID ===== */
 
 /*# sourceMappingURL=style.css.map */
