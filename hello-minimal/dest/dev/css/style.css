@@ -55,6 +55,7 @@ table {
 }
 
 /* CSS RESET END */
+/* ========== HEADER SECTION ========== */
 * {
   box-sizing: border-box;
 }
@@ -165,6 +166,7 @@ header .banner h1:after {
   z-index: -1;
 }
 
+/* ========== MAIN SECTION ========== */
 main:after {
   content: "";
   display: table;
@@ -399,7 +401,7 @@ section {
   font-weight: bold;
 }
 
-/* ===== FOOTER SECTION =====*/
+/* ========== FOOTER SECTION ========== */
 footer {
   margin-top: 50px;
   background-color: #ececec;
@@ -446,6 +448,7 @@ footer a:hover:after {
   background: #70a3d0;
 }
 
+/* ========== MEDIA QUERIES ========== */
 @media screen and (min-width: 640px) and (max-width: 960px) {
   /* ========== HEADER ========== */
   header .banner h1 {
@@ -709,7 +712,5 @@ footer a:hover:after {
     height: 0;
   }
 }
-
-/* ===== GRID ===== */
 
 /*# sourceMappingURL=style.css.map */
