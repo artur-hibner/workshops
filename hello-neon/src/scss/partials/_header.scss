@@ -7,3 +7,14 @@ html{
 	color: #000;
 	height:100%;
 }
+
+header{
+	width: 100%;
+	.banner{
+		width: 94%;
+		margin: 0 auto;
+		background-image: url("../images/herobanner.jpg");
+		background-size: cover;
+		
+	}
+}
