@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Work+Sans:400,600,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,18 +66,171 @@ html {
   height: 100%;
 }
 
+h1, h2, h3, p {
+  font-family: "Work Sans", sans-serif;
+}
+
 header {
   width: 100%;
+  position: relative;
+  padding: 50px;
+  height: 100vh;
 }
 
 header .banner {
-  width: 94%;
+  height: 100%;
   margin: 0 auto;
   background-image: url("../images/herobanner.jpg");
   background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+header .banner h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10rem;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #7625fb;
+  font-weight: 600;
+  z-index: 1;
+}
+
+header .banner img {
+  width: 800px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .icons {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 60px);
+}
+
+header .icons li {
+  width: 40px;
+  margin: 0 auto;
 }
 
 /* ========== MAIN SECTION ========== */
+main:after, #intro:after, #gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #7625fb;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+h3 {
+  font-size: 4rem;
+  color: #fff;
+  line-height: 5.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.intro {
+  background-color: #f2f2f2;
+  padding: 75px 0 110px 0;
+}
+
+.intro__info, .intro__img {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+.intro__info {
+  padding-right: 100px;
+}
+
+.intro__img {
+  padding-left: 45px;
+}
+
+.intro p {
+  color: #3c3c3c;
+  line-height: 2.5rem;
+}
+
+.intro p:last-child {
+  margin-top: 35px;
+}
+
+.intro img {
+  width: auto;
+}
+
+.gallery {
+  padding: 60px 0 0 0;
+}
+
+.gallery h2, .gallery p {
+  display: inline-block;
+}
+
+.gallery p {
+  width: 82%;
+  padding-left: 50px;
+  font-family: Karla, sans-serif;
+  line-height: 2rem;
+}
+
+.info {
+  background-image: url("../images/panel.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 210px 0 70px 0;
+}
+
+.services {
+  padding: 115px 0 45px 0;
+  background: #e1d0fe;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e1d0fe 0%, #ab7afd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e1d0fe 0%, #ab7afd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d0fe', endColorstr='#ab7afd',GradientType=0 );
+  /* IE6-9 */
+}
+
+.contact {
+  padding-bottom: 135px;
+  background: #ab7afd;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ab7afd 0%, #7d30fb 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ab7afd 0%, #7d30fb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab7afd', endColorstr='#7d30fb',GradientType=0 );
+  /* IE6-9 */
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 

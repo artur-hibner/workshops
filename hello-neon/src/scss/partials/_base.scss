@@ -1,1 +1,92 @@
 /* ========== MAIN SECTION ========== */
+main, #intro, #gallery{
+	@include clearfix;
+}
+.wrapper{
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h2{
+	color: #7625fb;
+	font-size: 5rem;
+	font-weight: 600;
+	margin-bottom: 55px;
+}
+
+h3{
+	font-size: 4rem;
+	color: #fff;
+	line-height: 5.5rem;
+	// letter-spacing: 0.4rem;
+}
+
+p{
+	font-size: 1.4rem;
+}
+
+.intro{
+	background-color: #f2f2f2;
+	padding: 75px 0 110px 0;
+	&__info, &__img{
+		display: inline-block;
+		width: 50%;
+		float: left;
+	}
+	&__info{
+		padding-right: 100px;
+	}
+	&__img{
+		padding-left: 45px;
+	}
+	p{
+		color: #3c3c3c;
+		line-height: 2.5rem;
+		&:last-child{
+			margin-top: 35px;
+		}
+	}
+	img{
+		width: auto;
+	}
+}
+
+.gallery{
+	padding: 60px 0 0 0;
+	h2, p{
+		display: inline-block;
+		// float: left;
+	}
+	p{	
+		width: 82%;
+		padding-left: 50px;
+		font-family: $karla;
+		line-height: 2rem;
+	}
+}
+
+.info{
+	background-image: url("../images/panel.jpg");
+	background-size: cover;
+	background-position: bottom;
+	padding: 210px 0 70px 0;
+}
+.services{
+	padding: 115px 0 45px 0;
+	background: #e1d0fe; /* Old browsers */
+	background: -moz-linear-gradient(top, #e1d0fe 0%, #ab7afd 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #e1d0fe 0%,#ab7afd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e1d0fe 0%,#ab7afd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d0fe', endColorstr='#ab7afd',GradientType=0 ); /* IE6-9 */
+}
+.contact{
+	padding-bottom: 135px;
+
+	background: #ab7afd; /* Old browsers */
+	background: -moz-linear-gradient(top, #ab7afd 0%, #7d30fb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ab7afd 0%,#7d30fb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ab7afd 0%,#7d30fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab7afd', endColorstr='#7d30fb',GradientType=0 ); /* IE6-9 */
+}

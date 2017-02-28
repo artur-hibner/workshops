@@ -8,13 +8,52 @@ html{
 	height:100%;
 }
 
+h1, h2, h3, p{
+	font-family: $worksans;
+}
+
 header{
 	width: 100%;
+	position: relative;
+	padding: 50px;
+	height: 100vh;
 	.banner{
-		width: 94%;
+		// width: 94%;
+		height: 100%;
 		margin: 0 auto;
 		background-image: url("../images/herobanner.jpg");
 		background-size: cover;
-		
+		background-position: bottom;
+		position: relative;
+		h1{
+			font-family: 'Work Sans', sans-serif;
+			font-size: 10rem;
+			letter-spacing: 10px;
+			position: absolute;
+			top: 50%;
+    		left: 50%;
+			transform: translate(-50%, -50%);
+			color: #7625fb;
+			font-weight: 600;
+			z-index: 1;
+		}
+		img{
+			width: 800px;
+			// height: 200px;
+			position: absolute;
+    		top: 45%;
+    		left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.icons{
+		position: absolute;
+		left: 0;
+		top: calc(50% - 60px);
+		li{
+			width: 40px;
+			margin: 0 auto;
+
+		}
 	}
 }
