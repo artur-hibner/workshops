@@ -18,7 +18,6 @@ header{
 	padding: 50px;
 	height: 100vh;
 	.banner{
-		// width: 94%;
 		height: 100%;
 		margin: 0 auto;
 		background-image: url("../images/herobanner.jpg");
@@ -38,22 +37,44 @@ header{
 			z-index: 1;
 		}
 		img{
-			width: 800px;
-			// height: 200px;
+			width: 50%;
 			position: absolute;
     		top: 45%;
     		left: 50%;
 			transform: translate(-50%, -50%);
 		}
+		ul{
+			font-family: $worksans;
+			font-size: 2.5rem;
+			line-height: 2.5rem;
+			font-weight: 600;
+			list-style: none;
+			text-align: center;
+			position: absolute;
+			top: 75%;
+    		left: 50%;
+			transform: translate(-50%, -50%);
+			li{
+				display: inline-block;
+				margin-right: 50px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+			a{
+				color: #FFF;
+				height: 100%;
+				text-decoration: none;
+			}
+		}
 	}
 	.icons{
 		position: absolute;
-		left: 0;
+		left: 5px;
 		top: calc(50% - 60px);
 		li{
 			width: 40px;
 			margin: 0 auto;
-
 		}
 	}
 }

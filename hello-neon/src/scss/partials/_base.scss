@@ -1,5 +1,5 @@
 /* ========== MAIN SECTION ========== */
-main, #intro, #gallery{
+main, .intro, .gallery, .services, .contact{
 	@include clearfix;
 }
 .wrapper{
@@ -74,19 +74,104 @@ p{
 	padding: 210px 0 70px 0;
 }
 .services{
+	color: #fff;
 	padding: 115px 0 45px 0;
 	background: #e1d0fe; /* Old browsers */
 	background: -moz-linear-gradient(top, #e1d0fe 0%, #ab7afd 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #e1d0fe 0%,#ab7afd 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #e1d0fe 0%,#ab7afd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1d0fe', endColorstr='#ab7afd',GradientType=0 ); /* IE6-9 */
+	&__items, &__description{
+		float: left;
+	}
+	&__items{
+		width: 42%;
+	}
+	&__description{
+		width: 58%;
+	}
+	ul{
+		li{
+			font-family: $worksans;
+			font-size: 2.3rem;
+			line-height: 3.5rem;
+			text-transform: uppercase;
+			margin-top: 50px;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}
+	&__description{
+		p{
+			font-family: $karla;
+			font-size: 1.4rem;
+			line-height: 2.5rem;
+			&:last-child{
+				margin-top: 15px;
+			}
+		}
+		img{
+			float: left;
+			margin: 25px 30px 0 0;
+		}
+	}
 }
+
 .contact{
 	padding-bottom: 135px;
-
 	background: #ab7afd; /* Old browsers */
 	background: -moz-linear-gradient(top, #ab7afd 0%, #7d30fb 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #ab7afd 0%,#7d30fb 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ab7afd 0%,#7d30fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab7afd', endColorstr='#7d30fb',GradientType=0 ); /* IE6-9 */
+	h2{
+		margin-bottom: 40px;
+	}
+	&__form, &__info{
+		width: 42%;
+		float: left;
+	}
+	&__info{
+		width: 58%;
+	}
+	input, textarea{
+		width: 87%;
+		border: 0;
+		border-bottom: 2px solid #ececec;
+		margin-top: 45px;
+		padding: 10px 0 16px 10px;
+		background-color: inherit;
+		&::placeholder{
+			font-family: $worksans;
+			font-size: 1.8rem;
+			color: #FFF;
+		}
+	}
+	input[type=submit]{
+		padding: 20px 0;
+		background-color: #fff;
+		border: 0;
+		border-radius: 50px;
+		font-family: $worksans;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: #7625fb;
+		text-transform: uppercase;
+	}
+
+	&__info{
+		font-family: $karla;
+		font-size: 1.4rem;
+		line-height: 2.5rem;
+		color: #fff;
+		h4{
+			font-family: $worksans;
+			font-size: 3rem;
+			line-height: 2.5rem;
+			margin-top: 45px;
+			margin-bottom: 35px;
+			font-weight: 600;
+		}
+	}
 }
