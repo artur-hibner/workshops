@@ -1,0 +1,185 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Francois+One|Lusitana");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS RESET END */
+/* ========== HEADER SECTION ========== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #000;
+  height: 100%;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+}
+
+header h1 {
+  font-family: "Francois One", sans-serif;
+  font-size: 3.2rem;
+  line-height: 8rem;
+  position: absolute;
+  top: 55px;
+  left: 600px;
+  z-index: 2;
+}
+
+header h1:after {
+  content: "";
+  display: block;
+  background-color: #f3ce00;
+  height: 80px;
+  width: 630px;
+  position: absolute;
+  top: 0;
+  right: -35px;
+  z-index: -1;
+}
+
+main .info {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+main .info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main .info__text, main .info__image {
+  width: 50%;
+  max-height: 760px;
+  float: left;
+}
+
+main .info__text {
+  padding-left: 15px;
+  padding-top: 105px;
+}
+
+main .info__text h2 {
+  font-family: "Lusitana", serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main .info__text p {
+  font-family: "Lusitana", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+main .quote {
+  padding-bottom: 70px;
+  position: relative;
+}
+
+main .quote:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main .quote__image {
+  width: 100%;
+  max-width: 1080px;
+  float: right;
+}
+
+main .quote__text {
+  font-family: "Francois One", sans-serif;
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+  color: #FFF;
+  position: absolute;
+  bottom: 75px;
+  left: 200px;
+  z-index: 3;
+}
+
+main .quote__text:after {
+  content: "";
+  display: block;
+  background-color: #000;
+  height: 105px;
+  width: 860px;
+  position: absolute;
+  top: -20px;
+  left: -280px;
+  z-index: -1;
+}
+
+/* ========== MAIN SECTION ========== */
+/* ========== FOOTER SECTION ========== */
+/* ========== MEDIA QUERIES ========== */
+
+/*# sourceMappingURL=style.css.map */
