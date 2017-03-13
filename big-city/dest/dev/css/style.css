@@ -102,6 +102,7 @@ header h1:after {
   z-index: -1;
 }
 
+/* ========== MAIN SECTION ========== */
 main .info {
   padding-top: 90px;
   padding-bottom: 60px;
@@ -178,8 +179,117 @@ main .quote__text:after {
   z-index: -1;
 }
 
-/* ========== MAIN SECTION ========== */
 /* ========== FOOTER SECTION ========== */
+.footer {
+  font-family: "Francois One", sans-serif;
+  padding-bottom: 70px;
+}
+
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer__author, .footer__counter {
+  float: left;
+}
+
+.footer__author {
+  width: 76%;
+}
+
+.footer__author h2 {
+  font-size: 3.4rem;
+  line-height: 4.5rem;
+  margin-bottom: 35px;
+}
+
+.footer__author h3 {
+  font-size: 2.3rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.footer__author img {
+  width: 139px;
+  float: left;
+  margin-right: 32px;
+}
+
+.footer__author p {
+  font-family: "Lusitana", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.footer__counter {
+  width: 24%;
+  font-size: 7.4rem;
+  border-left: 2px solid #000;
+  margin-top: 80px;
+  padding-left: 63px;
+  height: 135px;
+}
+
+.footer__counter p:first-child {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.footer__counter p:last-child {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footer__buttons {
+  display: inline-block;
+  padding-top: 35px;
+}
+
+.footer__buttons button {
+  width: 198.5px;
+  font-family: "Francois One", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  background-color: #f3ce00;
+  border: 0;
+  padding: 15px 0;
+  text-transform: uppercase;
+  margin-right: 32px;
+}
+
+.social-link {
+  width: 75px;
+  height: 245px;
+  background-color: #000;
+  position: fixed;
+  top: 295px;
+  right: 0;
+}
+
+.social-link ul {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.social-link ul li:nth-child(2) {
+  margin: 25px 0;
+}
+
+.social-link ul li a {
+  display: block;
+}
+
+.social-link ul img {
+  width: 50px;
+}
+
 /* ========== MEDIA QUERIES ========== */
 
 /*# sourceMappingURL=style.css.map */

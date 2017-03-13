@@ -1,1 +1,61 @@
 /* ========== MAIN SECTION ========== */
+main{
+	.info{
+		padding-top: 90px;
+		padding-bottom: 60px;
+		@include clearfix;
+		&__text, &__image{
+			width: 50%;
+			max-height: 760px;
+			float: left;
+
+		}
+		&__text{
+			padding-left: 15px;
+			padding-top: 105px;
+			h2{
+				font-family: $lusitana;
+				font-size: 2.1rem;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			p{
+				font-family: $lusitana;
+				font-size: 1.5rem;
+				line-height: 2rem;
+				margin-top: 20px;
+			}
+		}
+	}
+	.quote{
+		padding-bottom: 70px;
+		position: relative;
+		@include clearfix;
+		&__image{
+			width: 100%;
+			max-width: 1080px;
+			float: right;
+		}
+		&__text{
+		font-family: $francois;
+		font-size: 2.1rem;
+		line-height: 2.8rem;
+		color: #FFF;
+		position: absolute;
+		bottom: 75px;
+		left: 200px;
+		z-index: 3;
+			&:after{
+				content: "";
+				display: block;
+				background-color: #000;
+				height: 105px;
+				width: 860px;
+				position: absolute;
+				top: -20px;
+				left: -280px;
+				z-index: -1;
+			}
+		}
+	}	
+}
