@@ -1,1 +1,47 @@
 /* ===== FOOTER SECTION =====*/
+.footer{
+	background-color: $main;
+	padding: 40px 0 40px 0;
+	@include clearfix;
+	line-height: 0;
+	// overflow:auto; 
+	// display: table;
+
+	p{
+		white-space: pre-line;
+		display: inline-block;
+		float: left;
+		// display: table-row;
+		height: 100%;
+		vertical-align: middle;
+		@include font-family($muli, 1.8rem, #FFF, 2.8rem, 400);
+	}
+	
+	ul{
+		list-style: none;
+		display: inline-block;
+		float: right;
+		li{
+			display: inline-block;
+			height: 65px;
+			margin-left: 25px;
+			a{
+				display: inline-block;
+				height: 100%;
+			}
+		}
+	}
+	&__copy, &__icons{
+		display: inline-block;
+		float: left;
+		width: 50%;
+		height: 100%;
+	}
+	&__icons{
+		float: right;
+	}
+	img{
+		width: auto;
+		height: 65px;
+	}
+}
