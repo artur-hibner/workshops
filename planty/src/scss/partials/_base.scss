@@ -1,4 +1,66 @@
 /* ========== MAIN SECTION ========== */
 .features{
 	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 465px;
+	@include font-family($playfair, 5rem, #FFF, 6.75rem, 400);
+	font-style: italic;
+	.wrapper{
+		position: relative;
+	}
+	h3{
+		position: absolute;
+		right: 60px;
+		top: 280px;
+	}
+}
+section h2{
+	@include font-family($playfair, 6.5rem, #000, 7.7rem, 400);
+	font-style: italic;
+	margin-top: 50px;
+	margin-bottom: 45px;
+}
+
+.experts{
+	min-height: 480px;
+	.wrapper{
+		position: relative;
+	}
+	&__person{
+		width: 445px;
+		padding: 30px 30px 30px 90px;
+		@include font-family($playfair, 4rem, #000, 4.9rem, 400);
+		border: 5px solid #b7dbc8;
+		h3{
+			font-style: italic;
+		}
+		span, p{
+			@include font-family($muli, 1.8rem, #000, 2.2rem, 400);
+		}
+		span{
+			text-transform: uppercase;
+		}
+		p{
+			line-height: 2.9rem;
+			margin-top: 30px;
+		}
+		img{
+			border: 5px solid #b7dbc8;
+			border-radius: 50%;
+			position: absolute;
+			left: -70px;
+			top: 50px;
+		}
+		&--lidia{
+			position: absolute;
+			left: 60px;
+		}
+		&--albert{
+			position: absolute;
+			right: 0;
+			top: 280px;
+		}
+	}
 }

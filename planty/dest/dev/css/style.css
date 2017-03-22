@@ -69,6 +69,96 @@ html {
 /* ========== MAIN SECTION ========== */
 .features {
   background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 465px;
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  color: #FFF;
+  line-height: 6.75rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.features .wrapper {
+  position: relative;
+}
+
+.features h3 {
+  position: absolute;
+  right: 60px;
+  top: 280px;
+}
+
+section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 6.5rem;
+  color: #000;
+  line-height: 7.7rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.experts {
+  min-height: 480px;
+}
+
+.experts .wrapper {
+  position: relative;
+}
+
+.experts__person {
+  width: 445px;
+  padding: 30px 30px 30px 90px;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  color: #000;
+  line-height: 4.9rem;
+  font-weight: 400;
+  border: 5px solid #b7dbc8;
+}
+
+.experts__person h3 {
+  font-style: italic;
+}
+
+.experts__person span, .experts__person p {
+  font-family: "Muli", sans-serif;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+
+.experts__person span {
+  text-transform: uppercase;
+}
+
+.experts__person p {
+  line-height: 2.9rem;
+  margin-top: 30px;
+}
+
+.experts__person img {
+  border: 5px solid #b7dbc8;
+  border-radius: 50%;
+  position: absolute;
+  left: -70px;
+  top: 50px;
+}
+
+.experts__person--lidia {
+  position: absolute;
+  left: 60px;
+}
+
+.experts__person--albert {
+  position: absolute;
+  right: 0;
+  top: 280px;
 }
 
 /* ===== FOOTER SECTION =====*/
