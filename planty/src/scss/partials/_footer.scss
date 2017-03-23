@@ -2,24 +2,18 @@
 .footer{
 	background-color: $main;
 	padding: 40px 0 40px 0;
+	min-height: 65px;
 	@include clearfix;
-	line-height: 0;
-	// overflow:auto; 
-	// display: table;
-
 	p{
 		white-space: pre-line;
 		display: inline-block;
 		float: left;
-		// display: table-row;
 		height: 100%;
 		vertical-align: middle;
 		@include font-family($muli, 1.8rem, #FFF, 2.8rem, 400);
 	}
-	
 	ul{
 		list-style: none;
-		display: inline-block;
 		float: right;
 		li{
 			display: inline-block;
@@ -36,9 +30,6 @@
 		float: left;
 		width: 50%;
 		height: 100%;
-	}
-	&__icons{
-		float: right;
 	}
 	img{
 		width: auto;

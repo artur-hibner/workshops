@@ -19,12 +19,12 @@
 section h2{
 	@include font-family($playfair, 6.5rem, #000, 7.7rem, 400);
 	font-style: italic;
-	margin-top: 50px;
 	margin-bottom: 45px;
 }
 
 .experts{
 	min-height: 480px;
+	padding-top: 50px;
 	.wrapper{
 		position: relative;
 	}
@@ -60,7 +60,72 @@ section h2{
 		&--albert{
 			position: absolute;
 			right: 0;
-			top: 280px;
+			top: 260px;
+		}
+	}
+}
+
+.contact{
+padding-bottom: 185px;
+	@include clearfix;
+	&__form, &__image{
+		width: 50%;
+		float: left;
+		position: relative;
+	}
+	form{
+		padding-right: 30px;
+	}
+	label{
+		@include font-family($muli, 1.8rem, #4f4f4f, 3rem, 400);
+	}
+	input, textarea{
+		@extend label;
+		border: 3px solid #051405;
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 10px;
+		outline: none;
+		&:focus{
+			background-color: $main;
+		}
+	}
+	textarea{
+		resize: none;
+		 overflow: auto;
+	}
+	input[type="submit"]{
+		background-color: $main;
+		@extend label;
+		font-size: 2rem;
+		padding: 18px;
+		text-transform: uppercase;
+		color: white;
+		margin-top: 100px;
+	}
+	&__image{
+		padding-left: 30px;
+		padding-top: 30px;
+			&:before{
+				border: 5px solid $main;
+				content: "";
+				display: block;
+				width: 410px;
+				height: 580px; 
+				position: absolute;
+				top: 0;
+				left: 25px;
+				z-index: 20;
+			}
+		img{
+			position: absolute;
+			top: 30px; 
+			right: 0;
+			display: block;
+			width: 420px;
+			height: 590px;
+			z-index: 19;
 		}
 	}
 }
