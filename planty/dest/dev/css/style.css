@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Muli|Playfair+Display:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Muli|Montserrat:400,700|Playfair+Display:400,400i,700,700i");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,7 +66,120 @@ html {
   height: 100%;
 }
 
+nav {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  color: #000;
+  line-height: 2.9rem;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 50px 0 50px;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
 /* ========== MAIN SECTION ========== */
+.about {
+  position: relative;
+  min-height: 910px;
+  margin-top: 30px;
+}
+
+.about__image, .about__info, .about__info button {
+  width: 50%;
+}
+
+.about__image {
+  position: relative;
+}
+
+.about__image:after, .about__image--top, .about__image--mobile {
+  position: absolute;
+}
+
+.about__image:after {
+  border: 5px solid #b7dbc8;
+  content: "";
+  display: block;
+  width: 555px;
+  height: 770px;
+  top: 30px;
+  left: -150px;
+  z-index: 5;
+}
+
+.about__image--top {
+  width: 555px;
+  height: 770px;
+  border: 0;
+  top: 0;
+  left: -180px;
+  z-index: 4;
+}
+
+.about__image--mobile {
+  top: 140px;
+  left: -60px;
+  z-index: 6;
+}
+
+.about__info, .about__info button {
+  margin-left: -20px;
+  position: relative;
+  float: right;
+  font-family: "Muli", sans-serif;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.about__info--logo {
+  margin-top: 160px;
+}
+
+.about__info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #000;
+  line-height: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 300px;
+  left: 60px;
+}
+
+.about__info p {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.about__info button {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #b7dbc8;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 25px 0 25px 0;
+  border: 0;
+  letter-spacing: 3px;
+}
+
 .features {
   background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
@@ -258,7 +371,6 @@ section h2 {
 
 .footer p {
   white-space: pre-line;
-  display: inline-block;
   float: left;
   height: 100%;
   vertical-align: middle;
@@ -286,7 +398,6 @@ section h2 {
 }
 
 .footer__copy, .footer__icons {
-  display: inline-block;
   float: left;
   width: 50%;
   height: 100%;

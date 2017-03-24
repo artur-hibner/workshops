@@ -6,7 +6,6 @@
 	@include clearfix;
 	p{
 		white-space: pre-line;
-		display: inline-block;
 		float: left;
 		height: 100%;
 		vertical-align: middle;
@@ -26,7 +25,6 @@
 		}
 	}
 	&__copy, &__icons{
-		display: inline-block;
 		float: left;
 		width: 50%;
 		height: 100%;

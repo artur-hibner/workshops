@@ -7,3 +7,22 @@ html{
 	color: #000;
 	height:100%;
 }
+
+nav{
+	@include font-family($playfair, 2.4rem, #000, 2.9rem, 700);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	ul{
+		list-style: none;
+  		text-align: center;
+		li{
+			display: inline-block;
+			padding: 0 50px 0 50px;
+			a{
+				display: block;
+				text-decoration: none;
+				color: #000;
+			}
+		}
+	}
+}
