@@ -11,7 +11,44 @@ html{
 header{
 	font-size: 1.8rem;
 	font-family: $montserrat;
-	nav{
+	.mobile-toggle{
+		display: none;
+		cursor: pointer;
+		max-height: 100%;
+		position: absolute;
+		top: 10px; 
+		left: 10px;
+		z-index: 999;
+		span{
+			display: block;
+			width: 30px;
+			height: 4px;
+			margin: 6px 0;
+			background-color: #000;
+			cursor: pointer;
+  			border-radius: 50px;
+			position: relative;
+  			top: 0;
+  			transition: all ease-in-out 0.5s;
+		}
+		&--open{
+			span{
+			    &:nth-child(1){
+			      transform: rotate(45deg);
+			      top: 10px;
+			    }
+			    &:nth-child(2){
+			      width: 0;
+			      opacity: 0;
+			    }
+			    &:nth-child(3){
+			      transform: rotate(-45deg);
+			      top: -10px;
+			    }
+  			}
+		}
+	}
+	.nav{
 		ul{
 			list-style: none;
 			text-align: center;
