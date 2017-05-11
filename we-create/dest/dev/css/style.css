@@ -189,6 +189,36 @@ html {
   margin-left: 30px;
 }
 
+.section.ideas {
+  height: 312px;
+  font-size: 7.35rem;
+  color: #FFFFFF;
+  background-image: url(../images/fullbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.section.ideas img {
+  width: 625px;
+  height: auto;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 

@@ -84,4 +84,27 @@
 			}
 		}
 	}
+	&.ideas{
+		height: 312px;
+		font-size: 7.35rem;
+		color: #FFFFFF;
+		background-image: url(../images/fullbg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-position: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin-bottom: 80px;
+		& img{
+			width: 625px;
+			height: auto;
+			position: absolute;
+			bottom: -40px;
+			left: 0;
+		}
+	}
 }
