@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>We create</title>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:600|Roboto|Roboto+Mono:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto|Roboto+Mono:300" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/style.css">
 		
@@ -73,20 +73,19 @@
 					</div>
 				</div>
 			</section>
-			<section>
+			<section class="contact">
 				<div class="wrapper">
-					<div>
-						<h2>say hello 
-						to our team</h2>
+					<div class="contact__heading">
+						<h2>say hello<br>to our team</h2>
 					</div>
-					<div>
+					<div class="contact__form">
 						<form action="">
 							<label for="name">name</label>
 							<input type="text" id="name" name="name">
 							<label for="email">e-mail</label>
 							<input type="email" id="email" name="email">
 							<label for="message">message</label>
-							<input type="textarea" id="message" name="message">
+							<textarea id="message" name="message"></textarea>
 							<button type="submit">send</button>
 						</form>
 					</div>
@@ -94,7 +93,9 @@
 			</section>
 		</main>
 		<footer>
-			<p>created by the awwwesomes in 2017</p>
+			<div class="wrapper">	
+				<p>created by the awwwesomes in 2017</p>
+			</div>
 		</footer>
 	</body>
 </html>

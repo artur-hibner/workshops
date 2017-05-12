@@ -1,2 +1,12 @@
 /* ========== FOOTER SECTION ========== */
 
+footer{
+	position: relative;
+	height: 0;
+	p{
+		@include font-family($montserrat, 1rem, #541779, 1.6rem, 400);
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 40px;
+	}
+}
